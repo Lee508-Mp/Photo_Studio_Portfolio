@@ -19,7 +19,7 @@ module.exports = {
   site: {
     whatsapp: (process.env.SITE_WHATSAPP || process.env.OWNER_WHATSAPP || '').replace(/\D/g, ''),
     email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(process.env.CONTACT_EMAIL || '') ? process.env.CONTACT_EMAIL : '',
-    instagram: /^https:\/\//.test(process.env.INSTAGRAM_URL || '') ? process.env.INSTAGRAM_URL : ''
+    facebook: /^https:\/\//.test(process.env.FACEBOOK_URL || '') ? process.env.FACEBOOK_URL : ''
   },
   whatsapp: {
     token: process.env.WHATSAPP_TOKEN || '',

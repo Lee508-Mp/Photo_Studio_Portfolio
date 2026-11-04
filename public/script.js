@@ -11,7 +11,7 @@ async function loadSettings() {
       a.target = '_blank'; a.rel = 'noopener';
     });
     if (s.email) show('[data-mail]', a => { a.href = `mailto:${s.email}`; a.textContent = s.email; });
-    if (s.instagram) show('[data-ig]', a => { a.href = s.instagram; a.target = '_blank'; a.rel = 'noopener'; });
+    if (s.facebook) show('[data-ig]', a => { a.href = s.facebook; a.target = '_blank'; a.rel = 'noopener'; });
   } catch { /* contact buttons simply stay hidden */ }
 }
 
