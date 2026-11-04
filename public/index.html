@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arbel Arts  Studio | Photography in Zambia</title>
+<meta name="description" content="Wedding, portrait, event and landscape photography. Natural light, unposed moments, fast delivery.">
+<meta property="og:title" content="Arbel Arts  Studio">
+<meta property="og:description" content="Moments, kept in real light.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📷</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="boot.js"></script>
+</head>
+<body>
+<header class="nav"><div class="in wrap">
+  <a class="logo" href="#top">Arbel<span>Arts</span></a>
+  <nav>
+    <a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a>
+    <a class="btn sm" href="#contact">Book a shoot</a>
+  </nav>
+</div></header>
+
+<main id="top">
+  <section class="hero wrap">
+    <div>
+      <p class="eyebrow">Photography studio, Zambia</p>
+      <h1>Moments, kept in <em>real light.</em></h1>
+      <p class="lead">Weddings, portraits, events and places. Natural, unposed and delivered fast.</p>
+      <div class="cta">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn ghost" data-wa hidden>Chat on WhatsApp</a>
+      </div>
+    </div>
+    <div class="stack" id="stack" aria-hidden="true"></div>
+  </section>
+
+  <div class="ticker" aria-hidden="true"><div class="track">
+    <span>Weddings</span><span>Portraits</span><span>Events</span><span>Landscapes</span><span>Products</span>
+    <span>Weddings</span><span>Portraits</span><span>Events</span><span>Landscapes</span><span>Products</span>
+  </div></div>
+
+  <section class="sec wrap" id="work">
+    <h2>Selected work</h2>
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+    <div class="grid" id="grid" aria-live="polite">Loading photos...</div>
+  </section>
+
+  <!-- EDIT: the services and prices below are examples. Change the text and amounts to yours. -->
+  <section class="sec wrap" id="services">
+    <h2>Services</h2>
+    <div class="cards">
+      <article class="card"><h3>Portraits</h3><p>Solo, couples or family. A relaxed 1 hour session and 20 edited photos.</p><p class="price">From K1,200</p></article>
+      <article class="card"><h3>Weddings</h3><p>Full-day coverage, a second shooter on request, and a private online gallery.</p><p class="price">From K8,500</p></article>
+      <article class="card"><h3>Events</h3><p>Launches, graduations and parties. Fast turnaround, highlights within 48 hours.</p><p class="price">From K3,000</p></article>
+    </div>
+  </section>
+
+  <!-- EDIT: replace this text and the photo with your own story and portrait. -->
+  <section class="sec wrap about" id="about">
+    <img src="https://picsum.photos/seed/zlabout/800/1000" alt="The photographer at work" loading="lazy">
+    <div>
+      <h2>Hi, we are Arbel ArtsStudio.</h2>
+      <p>We are a small studio that believes the best photos happen when people forget the camera is there. We shoot mostly in natural light, direct gently, and edit with a light touch so your photos still look like you.</p>
+      <p>Based in Zambia, currently at Mulungushi University and happy to travel for the right story.</p>
+    </div>
+  </section>
+
+  <section class="sec wrap contact" id="contact">
+    <div>
+      <h2>Let's make something good.</h2>
+      <p>Tell us what you have in mind: the date, the place and the mood. We reply within a day.</p>
+      <div class="direct">
+        <a class="btn" data-wa hidden>Chat on WhatsApp</a>
+        <a class="textlink" data-mail hidden></a>
+        <a class="textlink" data-ig hidden>Instagram</a>
+      </div>
+    </div>
+    <form id="form" class="panel" novalidate>
+      <label>Name <input name="name" required maxlength="80" autocomplete="name"></label>
+      <label>Phone or email <input name="contact" maxlength="80"></label>
+      <label>Message <textarea name="message" rows="4" required maxlength="1000"></textarea></label>
+      <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn">Send message</button>
+      <p id="status" role="status"></p>
+      <a class="btn ghost" id="wa-open" target="_blank" rel="noopener" hidden>Open WhatsApp</a>
+    </form>
+  </section>
+</main>
+
+<footer class="foot wrap"><span>&copy; Arbel Arts  Studio</span><a href="admin.html">Admin</a></footer>
+
+<dialog id="lb"><img alt=""><p id="lb-cap"></p>
+  <div class="lbnav"><button class="btn ghost sm" id="lb-prev" aria-label="Previous photo">Prev</button><button class="btn ghost sm" id="lb-next" aria-label="Next photo">Next</button><button class="btn ghost sm" id="lb-close" aria-label="Close">Close</button></div></dialog>
+<script src="script.js"></script>
+</body>
+</html>

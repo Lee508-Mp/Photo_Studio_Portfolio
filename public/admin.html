@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Admin | Arbel Arts  Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav"><div class="in wrap"><span class="logo">Admin</span><nav><a href="/">View site</a><button id="logout" class="link" hidden>Log out</button></nav></div></header>
+<main class="admin">
+  <section id="login-view" hidden>
+    <h2>Log in</h2>
+    <form id="login-form">
+      <label>Username <input name="username" required autocomplete="username"></label>
+      <label>Password <input name="password" type="password" required autocomplete="current-password"></label>
+      <button class="btn">Log in</button>
+    </form>
+  </section>
+  <section id="dash-view" hidden>
+    <h2>Add a photo</h2>
+    <form id="upload-form">
+      <label>Image (JPG, PNG or WebP, max 18 MB) <input name="photo" type="file" accept="image/jpeg,image/png,image/webp" required></label>
+      <label>Title <input name="title" required maxlength="80"></label>
+      <label>Category (used for the filter buttons) <input name="category" maxlength="40" placeholder="Wedding, Portrait..."></label>
+      <button class="btn">Upload photo</button>
+    </form>
+    <h2>Your photos</h2>
+    <ul id="photo-list" class="plist"></ul>
+    <h2>Enquiries</h2>
+    <ul id="enq-list" class="plist enq"></ul>
+  </section>
+  <p id="msg" role="status"></p>
+</main>
+<script src="admin.js"></script>
+</body>
+</html>
