@@ -116,3 +116,12 @@ dialog p{margin:.6rem 0}
 .plist.enq li{display:block;padding:1rem}
 .plist.enq li small{color:var(--muted);margin-left:.5rem}
 .plist.enq li p{margin:.4rem 0 .8rem;color:var(--muted);white-space:pre-wrap}
+
+.card{display:flex;flex-direction:column}
+.card .btn{align-self:flex-start;margin-top:1.2rem}
+.card .price{margin-top:auto;padding-top:1.2rem}
+.hint{color:var(--muted);margin-top:-.8rem}
+.svc{border:1px solid var(--line);border-radius:12px;padding:1rem;margin:0 0 1rem;display:grid;gap:.8rem}
+.svc legend{padding:0 .4rem;color:var(--accent);font-weight:600}
+.svc-bar{display:flex;gap:.5rem;flex-wrap:wrap}
+#content-msg.err{color:var(--danger)}

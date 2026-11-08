@@ -22,7 +22,7 @@ exports.list = (req, res) => res.json(photos.all());
 exports.create = (req, res) => {
   const f = req.file;
   if (!f) return res.status(400).json({ error: 'Choose an image to upload.' });
-  const fail = msg => { fs.unlink(f.path, () => {}); return res.status(400).json({ error: msg }); };
+  const fail = msg => { fs.rmSync(f.path,{ force: true }); return res.status(400).json({ error: msg }); };
 
   const title = String(req.body.title || '').trim().slice(0, 80);
   const category = String(req.body.category || '').trim().slice(0, 40);

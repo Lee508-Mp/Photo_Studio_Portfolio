@@ -32,11 +32,23 @@
     </form>
     <h2>Your photos</h2>
     <ul id="photo-list" class="plist"></ul>
+    <h2>Website text</h2>
+    <p class="hint">Edit the About section and your services. Changes go live when you press Save.</p>
+    <form id="content-form">
+      <label>About heading <input id="about-h" maxlength="100" required></label>
+      <label>About text (leave a blank line between paragraphs) <textarea id="about-b" rows="7" maxlength="2000"></textarea></label>
+      <div id="svc-list"></div>
+      <button type="button" class="btn ghost" id="svc-add">Add a service</button>
+      <button class="btn">Save changes</button>
+      <button type="button" class="btn ghost" id="content-reset">Reset to defaults</button>
+      <p id="content-msg" role="status"></p>
+    </form>
     <h2>Enquiries</h2>
     <ul id="enq-list" class="plist enq"></ul>
   </section>
   <p id="msg" role="status"></p>
 </main>
 <script src="admin.js"></script>
+<script src="admin-content.js"></script>
 </body>
 </html>
